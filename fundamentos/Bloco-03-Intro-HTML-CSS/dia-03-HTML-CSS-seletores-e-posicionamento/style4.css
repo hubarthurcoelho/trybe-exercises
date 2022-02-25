@@ -1,0 +1,33 @@
+#primaria {
+    color: aqua;
+}
+#secundaria {
+    color: blue;
+}
+#complementar {
+    color: red;
+}
+#escura {
+    color: orange;
+}
+#clara {
+    color: aquamarine;
+}
+#1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#2 {
+    font-family: monospace;
+}
+#3 {
+    font-size: larger;
+    font-style: italic;
+}
+#4 {
+    font-family: Arial, Helvetica, sans-serif;    
+}
+#5 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: italic;
+}
