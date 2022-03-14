@@ -37,12 +37,11 @@
     <main class="main-content">
       <section class="center-content">
         <p>Texto padrão do nosso site</p>
-        <p>-----</p>
+        <p>gg</p>
         <p>Trybe</p>
       </section>
     </main>
     <script>
-
 
         function changeInnerText() {
             document.getElementsByTagName('p')[0].innerText = 'Me vejo trabalhando como um desenvolvedor web pleno.';
@@ -65,11 +64,11 @@
         correctTitle();
 
         function UpperCase() {
-          let text = document.getElementsByTagName('p')[0];
-            // for (let index in text) {
-            // text[index].innerHTML = text[index].innerHTML.toUpperCase();
-            // }
-          text.innerHTML = text.innerHTML.toUpperCase();
+          let text = document.getElementsByTagName('p');
+            for (let index = 0; index < text.length; index += 1) {
+              // console.log(text[index]); usei para testar um erro que estava dando no upperCase. Resolvi substituindo o For/in por apenas For.
+            text[index].innerHTML = text[index].innerHTML.toUpperCase();
+             }
         }
         UpperCase();
 
