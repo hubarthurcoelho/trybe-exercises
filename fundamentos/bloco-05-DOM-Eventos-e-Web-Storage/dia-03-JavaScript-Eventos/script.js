@@ -137,6 +137,32 @@ function legendaColorida(cor){
 legendaColorida('green');
 
 // Questão 9:
+function changeCurrentTask () {
+  let currentTask = document.querySelector('.task');
+  currentTask.addEventListener('click', function(event){
+    console.log(event.target.className);
+    if (event.target.className == 'task'){
+    event.target.className = 'task-selected';
+    }else{
+    event.target.className = 'task';
+    }
+  });
+}
+changeCurrentTask();
+
+// Questão 10: 
+function setTaskDays () {
+  let days = document.querySelector('#days');
+  days.addEventListener('click', function(event) {
+    let taskSelected = document.querySelector('.task-selected');
+    if (event.target.style.color !== taskSelected.style.backgroundColor){
+    event.target.style.color = taskSelected.style.backgroundColor;
+    } else {
+    event.target.style.color = 'rgb(119, 119, 119)';
+    }
+  });
+}
+setTaskDays();
 
 
 
