@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    display: inline-block;
+    width: 49%;
+    margin-left: 10px;
+    margin-top: 100px;
+    text-align: center;
+}
+ div {
+     text-align: center;
+     margin-top: 50px;
+ }
