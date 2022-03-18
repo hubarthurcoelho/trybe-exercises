@@ -137,6 +137,59 @@ function legendaColorida(cor){
 legendaColorida('green');
 
 // Questão 9:
+function changeCurrentTask () {
+  let currentTask = document.querySelector('.task');
+  currentTask.addEventListener('click', function(event){
+    console.log(event.target.className);
+    if (event.target.className == 'task'){
+    event.target.className = 'task-selected';
+    }else{
+    event.target.className = 'task';
+    }
+  });
+}
+changeCurrentTask();
+
+// Questão 10: 
+function setTaskDays () {
+  let days = document.querySelector('#days');
+  days.addEventListener('click', function(event) {
+    let taskSelected = document.querySelector('.task-selected');
+    if (event.target.style.color !== taskSelected.style.backgroundColor){
+    event.target.style.color = taskSelected.style.backgroundColor;
+    } else {
+    event.target.style.color = 'rgb(119, 119, 119)';
+    }
+  });
+}
+setTaskDays();
+
+// QUESTÃO BONUS 
+
+let button = document.getElementById('btn-add');
+let input = document.getElementById('task-input');
+let list = document.querySelector('.task-list');
+
+button.addEventListener('click', function() {
+  if (input.value.length > 0) {
+    let li = document.createElement('li');
+    li.innerText = input.value;
+    list.appendChild(li);
+    input.value = '';
+  } else {
+    alert('Não há nada para adicionar!');
+  }
+});
+
+input.addEventListener('keyup', function(event) {
+  if (event.key === 'Enter' && input.value.length > 0) {
+    let li2 = document.createElement('li');
+    li2.innerText = input.value;
+    list.appendChild(li2);
+    input.value = '';
+  }
+})
+
 
 
 
