@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário exercício</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Concorra a uma viagem!</h1></header>
+    <form action="" method="get">
+        <label for="name"> Nome: 
+            <input type="text" name="name" maxlength="40" minlength="10" id="name">
+        </label>
+        <br>
+        <label for="email"> E-mail: 
+            <input type="email" name="email" maxlength="50" minlength="10" id="email">
+        </label>
+        <br>
+        <div>
+            <h4>Destino preferido:</h4>
+            <label for="city">
+                <input type="radio" name="favorite-destiny" value="city" id="city">Cidade
+            </label>
+            <label for="country-side"> 
+                <input type="radio" name="favorite-destiny" value="country-side" id="country-side">Campo
+            </label>
+            <label for="beach"> 
+                <input type="radio" name="favorite-destiny" value="beach" id="beach">Praia
+            </label>
+            <label for="mountains"> 
+                <input type="radio" name="favorite-destiny" value="mountains" id="mountains">Montanhas
+            </label>
+        </div>
+        <div>
+            <h4>Por que você deveria ser a pessoa escolhida?</h4>
+            <textarea name="reason" id="reason" cols="30" rows="10" maxlength="500" placeholder="Máximo de 500 caractéres!"></textarea>
+        </div>
+        <div>
+            <h4>Qual a melhor data para realizar sua viagem?</h4>
+            <label for="date">
+                <input type="date" name="date" id="date">
+            </label>
+        </div>
+        <div>
+            <label for="promotions">
+                <input type="checkbox" name="promotions" id="promotions">Gostaria de receber oportunidades oferecidas pela Trybe?
+            </label>
+            <br>
+            <label for="accept-photo-usage">
+                <input type="checkbox" name="accept-photo-usage" id="accept-photo-usage">Concordo que imagens das minhas férias poderão 
+                ser usadas na divulgação de concursos futuros.
+            </label>
+            <br>
+            <input type="submit" id="submitBtn" value="Enviar">
+            <br>
+            <button id="cleaner">Limpar tudo</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
