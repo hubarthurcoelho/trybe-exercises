@@ -1,0 +1,15 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  @media screen and (max-width: 415px) {
+    body {
+        font-size: 15px;
+    }
+    header, aside, h1, h2{
+        font-size: 15px;
+    }
+  }
