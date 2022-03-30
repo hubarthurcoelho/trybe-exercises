@@ -1,0 +1,142 @@
+/*
+ * @see http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * apply a natural box layout model to all elements, but allowing components to change
+ */
+ html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  * {
+    margin: 10px;
+  }
+  
+  body {
+    font-size: 40px;
+  }
+  
+  article {
+  
+  }
+  
+  h1 {
+    font-size: 40px;
+  }
+  
+  h2 {
+  
+  }
+  
+  img {
+      max-width: 100%;
+  }
+  
+  main {
+  
+  }
+  
+  section {
+  
+  }
+  
+  figure {
+      margin: 100px;
+  }
+  
+  figcaption {
+    font-size: .8em;
+  }
+
+  @media screen and (max-width: 1000px) {
+    body {
+      font-size: 30px;
+    }
+    h1, h2 {
+      font-size: 30px;
+    }
+    figure {
+      margin: 10px;
+
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }  
+  }
+  @media screen and (max-width: 564px) {
+    body {
+      font-size: 25px;
+    }
+    h1, h2 {
+      font-size: 25px;
+    }
+    figure {
+      margin: 0px;
+
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }  
+  }
+  @media screen and (max-width: 440px) {
+    body {
+      font-size: 15px;
+    }
+    h1, h2 {
+      font-size: 15px;
+    }
+    figure {
+      margin: 0px;
+
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }  
+  }
+  @media screen and (min-width: 1001px) {
+    body {
+      font-size: 40px;
+    }
+    h1, h2 {
+      font-size: 40px;
+    }
+    figure {
+      margin: 0px;
+
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }  
+  }
+  @media screen and (min-width: 1946px) {
+    body {
+      font-size: 55px;
+    }
+    h1, h2 {
+      font-size: 55px;
+    }
+    figure {
+      margin: 0px;
+
+    }
+    section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }  
+    img {
+      flex-grow: 1;
+    }
+  }
