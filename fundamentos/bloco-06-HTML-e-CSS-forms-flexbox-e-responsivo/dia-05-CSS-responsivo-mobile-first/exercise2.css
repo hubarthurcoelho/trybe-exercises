@@ -5,9 +5,31 @@ html {
   *, *:before, *:after {
     box-sizing: inherit;
   }
+  @media screen and (max-width: 801px) {
+    body {
+        font-size: 25px;
+        background-color: pink;
+    }
+    header, aside, h1, h2{
+        font-size: 25px;
+    }
+    #div2 {
+        display: flex;
+    }
+  }
+  @media screen and (max-width: 601px) {
+    body {
+        font-size: 20px;
+        background-color: beige;
+    }
+    header, aside, h1, h2{
+        font-size: 20px;
+    }
+  }
   @media screen and (max-width: 415px) {
     body {
         font-size: 15px;
+        background-color: blue;
     }
     header, aside, h1, h2{
         font-size: 15px;
