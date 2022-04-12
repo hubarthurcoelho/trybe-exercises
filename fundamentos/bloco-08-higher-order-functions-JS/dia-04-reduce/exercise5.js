@@ -4,14 +4,15 @@ const names = [
     'Abeladerco', 'Adieidy', 'Alarucha',
   ];
 
-function containsA() {
-  return names.reduce((acc, curr) => 
-      acc + curr.split('').reduce((acc2, curr2) => {
-          if (curr2 === 'a' || curr2 === 'A') {
-              return acc2 + 1;
-          }
-          return acc2;
-    }, 0), 0);
-}
+const filteredArray = names.reduce((acc, curr) => `${acc}${curr}`)
 
-console.log(containsA());
+function checkAs(string) {
+  let stringUp = string.toUpperCase();
+  let count = 0;
+  for (let index = 0; index < stringUp.length; index += 1) {
+    if (stringUp[index] === 'A') count += 1;
+  }
+  return count;
+};
+
+console.log(checkAs(filteredArray));
