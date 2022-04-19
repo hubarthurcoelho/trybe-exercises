@@ -1,12 +1,14 @@
-const upperCaseFunction = require('.exercise7');
+const upperCase = require('./exercise7');
 
 describe('Testing uppercase function', () => {
-    it('tests if the function returns a string in upper case', (done) => {
-        try {
-            upperCaseFunction('casa', callback);
-            done();
-        } catch (error) {
-            done(error);
-        }
+    it('upperCase "house" to equal "HOUSE"', (done) => {
+        upperCase('house', (string) => {
+            try {
+                expect(string).toBe('HOUSE');
+                done();
+            } catch (error) {
+                done(error);
+            }
+        })
     })
 });
