@@ -72,3 +72,21 @@ console.log(MCZ_SP); // prints:
 //   destination: 'SP',
 //   departure: 2022-10-04T18:12:27.762Z
 // }
+
+interface Car {
+  model: string;
+  year: number;
+  manufacturer: string;
+};
+
+interface Feline {
+  species: string;
+  prays: Array<string>;
+  habitat: string;
+};
+
+interface Airplane {
+  model: string;
+  year: number;
+  manufacturer: string;
+}
